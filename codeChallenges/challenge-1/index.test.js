@@ -13,12 +13,19 @@
   * const arrOfNum = [1, 2, 2, 4, 5, 6, 6];
   * console.log(getUniqueValues(arrOfNum)); // [1, 2, 4, 5, 6]
   */
- const arrOfNum = [1, 2, 2, 4, 5, 6, 6];
- const getUniqueValues = (arrOfNum) => {
-   // TO DO
-   const uniqueValues = [...new Set(arrOfNum)];
-   return uniqueValues
-   };
- console.log(getUniqueValues(arrOfNum)); // [1, 2, 4, 5, 6]
+const arrOfNum = [1, 2, 2, 4, 5, 6, 6]
+const getUniqueValues = (arrOfNum) => {
+  // TO DO
+  const uniqueValues = [...new Set(arrOfNum)]
+  return uniqueValues
+}
+
+
+describe("Tests", () => {
+  it("test factorial", () => {
+    expect(getUniqueValues(arrOfNum)).toEqual([1, 2, 4, 5, 6])
+  })
+})
+
 
 //  Time compixity O(n)
