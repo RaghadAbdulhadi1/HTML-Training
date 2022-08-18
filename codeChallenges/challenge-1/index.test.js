@@ -16,13 +16,8 @@
  const arrOfNum = [1, 2, 2, 4, 5, 6, 6];
  const getUniqueValues = (arrOfNum) => {
    // TO DO
-   var uniqueNums = [];
-   for(let i = 0; i < arrOfNum.length; i++){
-    if(arrOfNum[i+1] != arrOfNum[i]){
-        uniqueNums.push(arrOfNum[i]);
-    };
-    }
-    return uniqueNums;
+   const uniqueValues = [...new Set(arrOfNum)];
+   return uniqueValues
    };
  console.log(getUniqueValues(arrOfNum)); // [1, 2, 4, 5, 6]
 
