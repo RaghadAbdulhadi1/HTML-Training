@@ -1,4 +1,152 @@
-/* *{
+*{
     margin: 0;
-    pad
-} */
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #2b2d42;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16p */
+    font-size: 2rem;
+    color: #8d99ae;
+
+}
+h2,p{
+    margin: 1.6rem 0;
+    color: #2b2d42
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: #8d99ae;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #2b2d42;
+}
+
+p{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-size: 3.2rem;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+}
+
+nav ul{
+    list-style-type: none;
+    align-items: stretch;
+}
+
+nav ul li{
+    display: inline-block;
+    align-items: stretch;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+nav ul li a:hover{
+    color: #ff0054;
+    transition: 0.3s, ease-in-out;
+}
+
+@media only screen and (max-width:672px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+.about-section{
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+}
+
+div.about{
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    border-radius: 15px;
+    background-color: #8d99ae;
+    border-radius: 10px;
+}
+
+div.about p{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #2b2d42;
+}
+
+.education {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.education-section {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 40%;
+    background: #8d99ae;
+    border: 1px solid ;
+    border-radius: 20px;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body img{
+    width: 50%;
+}
+
+@media only screen and (max-width:672px){
+    .row{
+        flex-direction: column;
+    }
+}
