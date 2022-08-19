@@ -1,0 +1,101 @@
+.logo{
+    text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-overview{
+    width: 100%;
+    height: auto;
+    display: grid;
+    background-color: #d8e2dc;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.profile-pic{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-items: center;
+    height: auto;
+}
+.name{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+.info{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;  
+    padding: 20px;
+    text-align: center;
+}
+
+.website-overview{
+    margin-bottom: 20px;
+}
+
+.services{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.business-card{ 
+    padding: 10px;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+}
+
+.website-design-card{
+    padding: 10px;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-app-card{
+    padding: 10px;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:1048px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+
+@media only screen and (max-width:1048px){
+    .website-overview{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
