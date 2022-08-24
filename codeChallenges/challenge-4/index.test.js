@@ -15,7 +15,7 @@
     }
     else{
         let toLower = str.toLowerCase()
-        let split = toLower.split(/(?=[A-Z])/)
+        let split = toLower.split(/(?=[A-Z]) || [ A-Za-z]/)
         let dashedString = split.join()
         return dashedString;
     }
