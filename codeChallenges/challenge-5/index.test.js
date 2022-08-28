@@ -40,6 +40,7 @@ const rotateRecursively = function(array, steps) {
         array.unshift(lastElem);
         return rotateRecursively(array, steps - 1);
     }
+    
 };
 console.log(rotateRecursively([1, 2, 3, 4, 5],11));
 
@@ -63,3 +64,18 @@ const rotateIterative = function(array, steps) {
     return array;
 };
 console.log(rotateIterative([1, 2, 3, 4, 5],1));
+
+
+
+class CoffeeMachine {
+    // ...
+  
+    constructor(power) {
+      this._power = power;
+    }
+  
+    get power() {
+      return this._power;
+    }
+}
+let coffeeMachine = new CoffeeMachine(100);
