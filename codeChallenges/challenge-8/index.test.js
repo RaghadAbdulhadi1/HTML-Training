@@ -16,7 +16,7 @@ const bitCounting = (num) => {
             return bitCountingR(Math.floor(num / 2), numberOfBits)
         }
     };
-    return bitCountingR(num, []).join('')
+    return bitCountingR(num, []).filter(x=>x==1).length
 }
-
+console.log(bitCounting(1234))
 // Complexity: O(log(n))
