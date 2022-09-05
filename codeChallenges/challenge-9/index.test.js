@@ -23,5 +23,6 @@ const nextBigger = function(num) {
         return swapedNum;
     }
 };
+console.log(nextBigger(573))
 
 // Complexity 0(n)
