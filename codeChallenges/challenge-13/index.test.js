@@ -27,7 +27,7 @@ Make the method work for arrays that contain objects and/or arrays as elements.
 // eslint-disable-next-line no-extend-native
 Array.prototype.isSubsetOf = function (target) {
   for (let i = 0; i < this.length; i++) {
-    if (target.includes(this[i])) {
+    if (target.flat().includes(this[i])) {
       continue;
     }
     return false;
@@ -35,7 +35,7 @@ Array.prototype.isSubsetOf = function (target) {
   return true;
 };
 const a = ["commit", "push"];
-console.log(a.isSubsetOf(["commit", "rebase", "push", "blame"]));
+console.log(a.isSubsetOf(["commit", ["rebase", "push"], "blame"]));
 
 const b = ['merge','reset','reset']
 console.log(b.isSubsetOf(['reset','merge','add','commit']));
