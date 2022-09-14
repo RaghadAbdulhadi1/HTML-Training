@@ -47,9 +47,9 @@ const translateRomanNumeral = (romanNumeral) => {
   }
   return value; 
 };
-describe("Tests", () => {
-  it("test translateRomanNumeral", () => {
-    expect(translateRomanNumeral("IV")).toEqual(4)
-  })
-})
+// describe("Tests", () => {
+//   it("test translateRomanNumeral", () => {
+//     expect(translateRomanNumeral("IV")).toEqual(4)
+//   })
+// })
 // Complexity: O(n)
