@@ -28,7 +28,7 @@ const DIGIT_VALUES = {
 };
 const translateRomanNumeral = (romanNumeral) => {
   // TO DO ...
-  let result = 0;
+  let value = 0;
   if(typeof(romanNumeral)!=='string'){
     return "invalid input";
   }
@@ -39,13 +39,13 @@ const translateRomanNumeral = (romanNumeral) => {
         return null;
       }
       if (current < next){
-          result += next - current
+          value += next - current
           i++
       } else {
-          result += current
+          value += current
       }
   }
-  return result; 
+  return value; 
 };
 describe("Tests", () => {
   it("test translateRomanNumeral", () => {
