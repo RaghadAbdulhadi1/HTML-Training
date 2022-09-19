@@ -15,8 +15,10 @@
  */
 const allAnagrams = function (string) {
   let anagramsArray = [];
-  const helper = function (string, num) {
-    if (num == 0) {
+  const helper = function (string) {
+    let originalString = string;
+    let newString = string;
+    if (originalString == newString) {
       return anagramsArray;
     }
     else {
@@ -26,11 +28,11 @@ const allAnagrams = function (string) {
         anagramsArray.push(charctersLeft + currentCharcter);
         console.log(string.split("").reverse().join(""))
       }
-      let newString = string.split("").reverse().join("")
+      newString = newString.split("").reverse().join("")
       return helper(newString, num--)
     }
   }
-  return helper(string, 2);
+  return helper(string);
 };
 
 let anagrams = allAnagrams("abc");
